@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+  body { background-color:#F2F2F2; font-family:Calibri; }
+
+  section { margin:auto; width:420px; display:block; padding:8px; }
+
+
+  .menu ul { padding:3px; margin:14px; font-size:25px; }
+
+  .menu li { display:inline-block; }
+
+  .menu li:hover { background-color:rgba(0,0,0,.1); border }
+
+
+  ul { list-style:none; display:inline-block; }
+
+  li { font-size:17px; }
+
+
+  a { text-decoration:underline; color:black; }
+
+  a:hover { text-decoration:none; color:rgba(0,0,0,.7); }
