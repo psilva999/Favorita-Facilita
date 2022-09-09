@@ -1,0 +1,23 @@
+@import 'config';
+@import 'keyframes';
+
+header {
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+  background:$black-overtone;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:.5rem 1rem;
+
+  &, ul {
+    display:flex;
+  }
+
+  ul {
+    list-style:none;
+    gap:3rem;
+  }
+}

@@ -1,0 +1,23 @@
+@import 'config';
+@import 'keyframes';
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+  
+}
+
+body {
+  overflow-x:hidden;
+  overflow-y:auto;
+  background:$main-black;
+  display:grid;
+}
+
+@import 'header';
+
+@import 'content';
+@import 'footer';
