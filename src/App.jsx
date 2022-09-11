@@ -8,7 +8,9 @@ import Footer from './Components/Footer'
 function App() {
   return (
     <>
-      befnewkf
+      <Header/>
+      
+      <Footer/>
     </>
   )
 }
