@@ -5,5 +5,40 @@ footer {
   bottom:0;
   left:0;
   width:100vw;
-  
+  background:$black-overtone;
+  padding:1.3rem 2rem .9rem 2rem;
+  display:flex;
+  gap:56rem;
+
+  &, div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  span {
+    font-size:.8rem;
+  }
+
+  div {
+    gap:3rem;
+
+    a {
+      opacity:.6;
+      transition:.3s;
+
+      &:hover {
+        opacity:1;
+        transition:.3s;
+      }
+    }
+
+    a:nth-child(2) {
+      margin-top:-.2rem;
+    }
+
+    img {
+      height:2rem;
+    }
+  }
 }
