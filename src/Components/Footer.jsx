@@ -10,13 +10,13 @@ const Footer = () => {
       <span>@ todos os direitos reservados</span>
 
       <div>
-        <a href="https://www.linkedin.com/in/psilva999/">
+        <a href="https://www.linkedin.com/in/psilva999/" target='_blank'>
           <img src={ Linkedin }/> </a>
 
-        <a href="https://github.com/psilva999">
+        <a href="https://github.com/psilva999" target='_blank'>
           <img src={ Github }/> </a>
 
-        <a href="https://t.me/psilva999">
+        <a href="https://t.me/psilva999" target='_blank'>
           <img src={ Telegram }/> </a>
       </div>
     </footer>

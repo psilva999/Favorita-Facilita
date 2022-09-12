@@ -6,13 +6,21 @@ const Header = () => {
     <header>
       <img src={ Logo } alt="logo"/>
 
-      <ul>
-        <li>essenciais</li>
-        <li>invest-serviços</li>
+      <nav>
+        <div className='toggle-menu'>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
 
-        <li>codar</li>
-        <li>galio</li>
-      </ul>
+        <ul className='menu'>
+          <li>essenciais</li>
+          <li>invest-serviços</li>
+
+          <li>codar</li>
+          <li>galio</li>
+        </ul>
+      </nav>
 
       <button>contact</button>
     </header>

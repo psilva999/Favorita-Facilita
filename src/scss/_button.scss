@@ -7,17 +7,17 @@ header {
     letter-spacing:.1rem;
     text-transform:uppercase;
     padding:.62rem 1rem .5rem 1rem;
-    background:$emphasis;
+    background:$main-blue;
     background:
       linear-gradient(
         90deg,
-        rgba(17, 91, 192, .2) -60%,
-        $emphasis)
+        $main-blue 0%,
+        $blue-overtone)
         var(--x, 0)/ 200%;
     transition:.3s;
 
     &:hover {
-      --x:100%;
+      --x:60%;
       transition:.3s;
     }
   }

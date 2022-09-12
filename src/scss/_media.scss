@@ -1,0 +1,43 @@
+@import 'config';
+
+@media (max-width:85rem) {
+  header, footer {
+    gap:0;
+    justify-content:space-between;
+  }
+}
+
+@media (max-width:68rem) {
+  header {
+    img {
+      height:1rem;
+    }
+
+    .menu {
+      display:none;
+
+      &.active {
+        display:grid;
+      }
+    }
+
+    button {
+      display:none;
+    }
+  }
+}
+
+@media (max-width:30rem) {
+  footer {
+    justify-content:center;
+    gap:1rem;
+
+    span, div {
+      justify-self:center;
+    }
+
+    div {
+      gap:1rem;
+    }
+  }
+}

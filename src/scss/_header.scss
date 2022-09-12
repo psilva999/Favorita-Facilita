@@ -13,15 +13,31 @@ header {
   gap:20.7rem;
   padding:1.2rem 1rem;
 
-  &, ul {
+  &, .menu {
     display:flex;
   }
 
-  ul {
+  .menu {
     list-style:none;
     gap:1.3rem;
     font-size:1rem;
     margin-left:-4rem;
+  }
+
+  .toggle-menu {
+    display:none;
+
+    &.active {
+      cursor:pointer;
+      display:grid;
+      gap:.3rem;
+
+      div {
+        background:$main-white;
+        width:1.7rem;
+        height:.2rem;
+      }
+    }
   }
 
   li, button {

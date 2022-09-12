@@ -6,9 +6,10 @@ footer {
   left:0;
   width:100vw;
   background:$black-overtone;
-  padding:1.3rem 2rem .9rem 2rem;
+  padding:1.3rem 1rem .9rem 1rem;
   display:flex;
-  gap:56rem;
+  gap:58rem;
+  flex-wrap:wrap;
 
   &, div {
     display:flex;
@@ -21,7 +22,7 @@ footer {
   }
 
   div {
-    gap:3rem;
+    gap:2.5rem;
 
     a {
       opacity:.6;
