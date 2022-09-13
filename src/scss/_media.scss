@@ -1,4 +1,5 @@
 @import 'config';
+@import 'keyframes';
 
 @media (max-width:85rem) {
   header, footer {
@@ -13,17 +14,55 @@
       height:1rem;
     }
 
-    .menu {
-      display:none;
+    .toggle-menu {
+      cursor:pointer;
+      display:grid;
+      gap:.3rem;
 
-      &.active {
-        display:grid;
+      div {
+        display:block;
+        background:$main-white;
+        width:1.7rem;
+        height:.2rem;
       }
     }
 
-    button {
+    .toggle-menu.closed {
+      div:nth-child(1), div:nth-child(3) {
+        animation:hide-lines .2s linear forwards;
+      }
+    }
+
+    .menu, button {
       display:none;
     }
+
+    .menu.active {
+      display:grid !important;
+      background:$black-overtone;
+      position:absolute;
+      gap:.5rem;
+      padding:.5rem 1rem;
+      right:.9rem;
+      top:3.6rem;
+      border-radius:.2rem;
+      overflow:hidden;
+
+      li {
+        opacity:.6;
+        transition:.3s;
+
+        &:hover {
+          transition:.3s;
+          opacity:1;
+        }
+
+        &:after {
+          display:none;
+        }
+      }
+    }
+    
   }
 }
 

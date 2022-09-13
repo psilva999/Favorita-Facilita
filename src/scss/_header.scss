@@ -26,18 +26,6 @@ header {
 
   .toggle-menu {
     display:none;
-
-    &.active {
-      cursor:pointer;
-      display:grid;
-      gap:.3rem;
-
-      div {
-        background:$main-white;
-        width:1.7rem;
-        height:.2rem;
-      }
-    }
   }
 
   li, button {
