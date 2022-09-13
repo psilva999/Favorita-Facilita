@@ -25,6 +25,10 @@ header {
     display:none;
   }
 
+  .no-style {
+    text-decoration:none;
+  }
+
   li, button {
     cursor:pointer;
   }
@@ -33,7 +37,7 @@ header {
     padding:.5rem;
   }
 
-  li:after {
+  li:after, li.active:after {
     content:'';
     display:block;
     margin:left;
@@ -44,7 +48,7 @@ header {
     transition:.3s;
   }
 
-  li:hover:after {
+  li:hover:after, li.active:after {
     transition:.3s;
     background:$main-white;
     width:100%;

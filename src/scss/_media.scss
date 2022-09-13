@@ -52,12 +52,16 @@
         opacity:.6;
         transition:.3s;
 
+        &.active {
+          opacity:1;
+        }
+
         &:hover {
           transition:.3s;
           opacity:1;
         }
 
-        &:after {
+        &:after, &.active:after {
           display:none;
         }
       }
@@ -74,10 +78,24 @@
   }
 }
 
+@media (max-width:45rem) {
+  main {
+    width:25rem;
+    gap:.7rem;
+
+    img {
+      width:11.7rem;
+    }
+  }
+}
+
 @media (max-width:30rem) {
   main {
+    width:18.5rem;
+    gap:.7rem;
+
     img {
-      width:15rem;
+      width:8.5rem;
     }
   }
 

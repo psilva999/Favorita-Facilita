@@ -1,8 +1,9 @@
 import React from 'react'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Header from './Components/Header'
-// import Principais from './Components/Principais'
-import Essenciais from './Components/Essenciais'
+import Principais from './Components/Principais'
+// import Essenciais from './Components/Essenciais'
 
 // import InvestServicos from './Components/InvestServicos'
 // import Codar from './Components/Codar'
@@ -24,9 +25,9 @@ function App() {
   return (
     <>
       <Header/>
-      {/* <Principais/> */}
+      <Principais/>
 
-      <Essenciais/>
+      {/* <Essenciais/> */}
       {/* <InvestServicos/> */}
       {/* <Codar/> */}
 
