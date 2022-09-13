@@ -15,6 +15,23 @@ body {
   overflow-y:auto;
   background:$main-black;
   display:grid;
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
+
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$main-black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$main-white;
+    background:$main-white;
+    border-radius:0 0 0 .1rem;
+    border:.375rem solid $main-white;
+  }
 }
 
 @import 'header';

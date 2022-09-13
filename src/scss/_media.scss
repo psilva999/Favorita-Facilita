@@ -61,12 +61,26 @@
           display:none;
         }
       }
+
     }
-    
+  }
+
+  main {
+    width:95vw;
+
+    a:hover {
+      transform:none;
+    }
   }
 }
 
 @media (max-width:30rem) {
+  main {
+    img {
+      width:15rem;
+    }
+  }
+
   footer {
     justify-content:center;
     gap:1rem;

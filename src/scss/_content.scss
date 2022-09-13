@@ -1,0 +1,38 @@
+@import 'config';
+@import 'keyframes';
+
+main {
+  max-width:65rem;
+  margin:3.5rem auto 3.5rem auto;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  flex-wrap:wrap;
+
+  a, img {
+    border-radius:.2rem .2rem 0 0;
+  }
+
+  a {
+    text-decoration:none;
+    background:$black-overtone;
+    display:grid;
+    gap:.6rem;
+    place-items:left;
+    padding-bottom:.6rem;
+    transition:.2s;
+
+    &:hover {
+      transition:.2s;
+      transform:scale(1.1);
+    }
+  }
+
+  img {
+    width:18rem;
+  }
+
+  span {
+    margin-left:.5rem;
+  }
+}
