@@ -1,18 +1,19 @@
 import React from 'react'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import Header from './Components/Header'
 import Principais from './Components/Principais'
-// import Essenciais from './Components/Essenciais'
 
-// import InvestServicos from './Components/InvestServicos'
-// import Codar from './Components/Codar'
+import Essenciais from './Components/Essenciais'
+import InvestServicos from './Components/InvestServicos'
 
-// import Galio from './Components/Galio'
+import Codar from './Components/Codar'
+import Galio from './Components/Galio'
+
 import Footer from './Components/Footer'
+import Nan from './Components/Nan'
 
 import { closeMenuFromOutside, resizeWindow } from './Components/Events/handleMenu'
-
 import './Css/app.min.css'
 
 function App() {
@@ -25,13 +26,18 @@ function App() {
   return (
     <>
       <Header/>
-      <Principais/>
 
-      {/* <Essenciais/> */}
-      {/* <InvestServicos/> */}
-      {/* <Codar/> */}
+      <Routes>
+        <Route path='/' element={ <Principais/> }/>
+        <Route path='essenciais' element={ <Essenciais/> }/>
 
-      {/* <Galio/> */}
+        <Route path='invest-servicos' element={ <InvestServicos/> }/>
+        <Route path='codar' element={ <Codar/> }/>
+
+        <Route path='galio' element={ <Galio/> }/>
+        <Route path='*' element={ <Nan/> }/>
+      </Routes>
+
       <Footer/>
     </>
   )

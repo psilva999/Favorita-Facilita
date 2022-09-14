@@ -1,19 +1,18 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 import Logo from '../assets/svg/0-logo.svg'
 
 import { handleMenu } from './Events/handleMenu'
-import { links } from './Events/link'
+import { codar, essenciais, galio, investServicos, removeAll } from './Events/link'
 
 const Header = () => {
 
   return (
     <header>
-      <Router>
-        <Link to='/' className='no-style'>
-        <img src={ Logo } alt="logo"/> </Link>
-      </Router>
+      <NavLink to='/' className='no-style'>
+        <img src={ Logo } alt="logo" onClick={ removeAll }/> 
+      </NavLink>
 
       <nav>
         <div className='toggle-menu' id='toggle-menu' onClick={ handleMenu }>
@@ -23,26 +22,28 @@ const Header = () => {
         </div>
 
         <ul className='menu' id='menu'>
-          <Router>
-            <Link to='/essenciais' className='no-style'>
-              <li onClick={ links }>essenciais</li> </Link>
+          <NavLink className='no-style' to="/essenciais">
+            <li onClick={ essenciais }>essenciais</li> 
+          </NavLink>
 
-            <Link to='/invest-servicos' className='no-style'>
-              <li>invest-serviços</li> </Link>
+          <NavLink className='no-style' to="/invest-servicos">
+            <li className='invest-servicos' onClick={ investServicos }>invest-serviços</li> 
+          </NavLink>
 
-            <Link to='/codar' className='no-style'>
-              <li>codar</li> </Link>
+          <NavLink className='no-style' to="/codar">
+            <li className='codar' onClick={ codar }>codar</li> 
+          </NavLink>
 
-            <Link to='/galio' className='no-style'>
-              <li>galio</li> </Link>
-          </Router>
-
+          <NavLink className='no-style' to="/galio">
+              <li className='galio' onClick={ galio }>galio</li>
+          </NavLink>
           
         </ul>
       </nav>
 
       <button>contact</button>
     </header>
+
   )
 }
 
