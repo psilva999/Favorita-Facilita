@@ -3,7 +3,7 @@ import React from 'react'
 const Nan = () => {
   return (
     <main>
-      NaN
+      <h1>|-Berserk-|</h1>
     </main>
   )
 }
