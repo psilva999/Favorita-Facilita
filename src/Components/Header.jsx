@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <NavLink to='/' className='no-style'>
+      <NavLink to='/favorita-facilita' className='no-style'>
         <img src={ Logo } alt="logo" onClick={ removeAll }/> 
       </NavLink>
 
@@ -22,22 +22,22 @@ const Header = () => {
         </div>
 
         <ul className='menu' id='menu'>
-          <NavLink className='no-style' to="/essenciais">
+          <NavLink className='no-style' to="/favorita-facilita/essenciais">
             <li onClick={ essenciais }>essenciais</li> 
           </NavLink>
 
-          <NavLink className='no-style' to="/invest-servicos">
+          <NavLink className='no-style' to="/favorita-facilita/invest-servicos">
             <li className='invest-servicos' onClick={ investServicos }>invest-serviços</li> 
           </NavLink>
 
-          <NavLink className='no-style' to="/codar">
+          <NavLink className='no-style' to="/favorita-facilita/codar">
             <li className='codar' onClick={ codar }>codar</li> 
           </NavLink>
 
-          <NavLink className='no-style' to="/galio">
+          <NavLink className='no-style' to="/favorita-facilita/galio">
               <li className='galio' onClick={ galio }>galio</li>
           </NavLink>
-          
+
         </ul>
       </nav>
 

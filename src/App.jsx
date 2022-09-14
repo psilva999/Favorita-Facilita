@@ -28,13 +28,13 @@ function App() {
       <Header/>
 
       <Routes>
-        <Route path='/' element={ <Principais/> }/>
-        <Route path='essenciais' element={ <Essenciais/> }/>
+        <Route path='/favorita-facilita' element={ <Principais/> }/>
+        <Route path='/favorita-facilita/essenciais' element={ <Essenciais/> }/>
 
-        <Route path='invest-servicos' element={ <InvestServicos/> }/>
-        <Route path='codar' element={ <Codar/> }/>
+        <Route path='/favorita-facilita/invest-servicos' element={ <InvestServicos/> }/>
+        <Route path='/favorita-facilita/codar' element={ <Codar/> }/>
 
-        <Route path='galio' element={ <Galio/> }/>
+        <Route path='/favorita-facilita/galio' element={ <Galio/> }/>
         <Route path='*' element={ <Nan/> }/>
       </Routes>
 
