@@ -14,7 +14,9 @@ import Shadow from '../assets/imgs/4-galio/9.png'
 
 import Imgbb from '../assets/imgs/4-galio/10.png'
 import Uns from '../assets/imgs/4-galio/11.png'
+
 import Uiverse from '../assets/imgs/4-galio/12.jpg'
+import Coolors from '../assets/imgs/4-galio/13.jpg'
 
 const Galio = () => {
   return (
@@ -77,6 +79,11 @@ const Galio = () => {
       <a href="https://uiverse.io/" target='_blank'>
         <img src={ Uiverse }/>
         <span>Uiverse</span> 
+      </a>
+
+      <a href="https://coolors.co/eabfcb-c191a1-a4508b-5f0a87-2f004f" target='_blank'>
+        <img src={ Coolors }/>
+        <span>Coolors</span> 
       </a>
     </main>
   )
